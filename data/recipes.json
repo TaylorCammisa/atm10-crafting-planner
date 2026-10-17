@@ -1,0 +1,41 @@
+{
+  "minecraft:oak_planks": {
+    "output_amount": 4,
+    "station": ["player", "crafting_table"],
+    "ingredients": {
+      "minecraft:oak_log": {
+        "quantity_needed": 1
+      }
+    }
+  },
+  "minecraft:crafting_table": {
+    "output_amount": 1,
+    "station": ["player", "crafting_table"],
+    "ingredients": {
+      "minecraft:oak_planks": {
+        "quantity_needed": 4
+      }
+    }
+  },
+  "minecraft:torch": {
+    "output_amount": 4,
+    "station": ["player", "crafting_table"],
+    "ingredients": {
+      "minecraft:stick": {
+        "quantity_needed": 1
+      },
+      "minecraft:coal": {
+        "quantity_needed": 1
+      }
+    }
+  },
+  "minecraft:stick": {
+    "output_amount": 4,
+    "station": ["player", "crafting_table"],
+    "ingredients": {
+      "minecraft:oak_planks": {
+        "quantity_needed": 2
+      }
+    }
+  }
+}
