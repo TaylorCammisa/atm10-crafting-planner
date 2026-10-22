@@ -1,6 +1,11 @@
 import json
 
-with open("data/recipes.json", "r", encoding="utf-8") as f:
-    recipes = json.load(f)
+def load_recipes(path):
+    with open(path, "r", encoding="utf-8") as f:
+        recipes = json.load(f)
 
-print(recipes["minecraft:torch"]["ingredients"]["minecraft:stick"]["quantity_needed"])
+    return recipes
+
+all_recipes = load_recipes("data/recipes.json")
+
+print(all_recipes["minecraft:torch"]["ingredients"]["minecraft:stick"]["quantity_needed"])
