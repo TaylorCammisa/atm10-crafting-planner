@@ -1,12 +1,13 @@
 import loader
 
-def is_raw_material(recipe_dict, item_id):
-    if item_id in recipe_dict:
+def is_raw_material(recipes, item_id):
+    if item_id in recipes:
         return False
     else:
         return True
 
-recipe_dict = loader.load_recipes("data/recipes.json")
-print(is_raw_material(recipe_dict, "minecraft:coal"))
-print(is_raw_material(recipe_dict, "minecraft:torch"))
-print(is_raw_material(recipe_dict, "minecraft:tourch"))
+if __name__ == "__main__":
+    recipes = loader.load_recipes("data/recipes.json")
+    print(is_raw_material(recipes, "minecraft:coal"))
+    print(is_raw_material(recipes, "minecraft:torch"))
+    print(is_raw_material(recipes, "minecraft:tourch"))
