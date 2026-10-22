@@ -6,6 +6,6 @@ def load_recipes(path):
 
     return recipes
 
-all_recipes = load_recipes("data/recipes.json")
-
-print(all_recipes["minecraft:torch"]["ingredients"]["minecraft:stick"]["quantity_needed"])
+if __name__ == "__main__":
+    all_recipes = load_recipes("data/recipes.json")
+    print(all_recipes["minecraft:torch"]["ingredients"]["minecraft:stick"]["quantity_needed"])
