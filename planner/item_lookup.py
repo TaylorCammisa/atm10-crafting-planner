@@ -1,10 +1,7 @@
 import loader
 
 def is_raw_material(recipes, item_id):
-    if item_id in recipes:
-        return False
-    else:
-        return True
+    return item_id not in recipes
 
 if __name__ == "__main__":
     recipes = loader.load_recipes("data/recipes.json")
